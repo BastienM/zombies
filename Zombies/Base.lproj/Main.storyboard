@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zombies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5pP-md-I5i"/>
+                        <viewControllerLayoutGuide type="bottom" id="x8Z-a3-oL6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="5pU-1c-Beg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6jC-Rg-u0V" appends="YES" id="bgg-xI-fiV"/>
+                            <outletCollection property="gestureRecognizers" destination="DwX-Yn-pom" appends="YES" id="fQi-Lo-QNv"/>
+                            <outletCollection property="gestureRecognizers" destination="hBb-3W-gUj" appends="YES" id="iJN-WP-wCV"/>
+                            <outletCollection property="gestureRecognizers" destination="dwd-gs-Lhh" appends="YES" id="mRp-oh-ddv"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="canvas" destination="5pU-1c-Beg" id="dVz-pV-sx2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="6jC-Rg-u0V">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="u54-ZN-iXW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="DwX-Yn-pom">
+                    <connections>
+                        <action selector="swipeDown:" destination="BYZ-38-t0r" id="03F-mG-K2L"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="hBb-3W-gUj">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="gjV-Zw-WCJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="dwd-gs-Lhh">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="Z8S-Zu-SoY"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="565" y="450"/>
         </scene>
     </scenes>
 </document>

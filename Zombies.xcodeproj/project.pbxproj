@@ -12,6 +12,10 @@
 		7337EFF01C18196600A2995F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7337EFEE1C18196600A2995F /* Main.storyboard */; };
 		7337EFF21C18196600A2995F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7337EFF11C18196600A2995F /* Assets.xcassets */; };
 		7337EFF51C18196600A2995F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7337EFF31C18196600A2995F /* LaunchScreen.storyboard */; };
+		7337EFFE1C181E3D00A2995F /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7337EFFD1C181E3D00A2995F /* Human.swift */; };
+		7337F0021C181EBF00A2995F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7337F0011C181EBF00A2995F /* Settings.swift */; };
+		7337F0041C1837D800A2995F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7337F0031C1837D800A2995F /* Character.swift */; };
+		7337F0061C1837F100A2995F /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7337F0051C1837F000A2995F /* Zombie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7337EFF11C18196600A2995F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7337EFF41C18196600A2995F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7337EFF61C18196600A2995F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7337EFFD1C181E3D00A2995F /* Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		7337F0011C181EBF00A2995F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		7337F0031C1837D800A2995F /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7337F0051C1837F000A2995F /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		7337EFE91C18196600A2995F /* Zombies */ = {
 			isa = PBXGroup;
 			children = (
+				7337EFFC1C181E2B00A2995F /* Model */,
 				7337EFEA1C18196600A2995F /* AppDelegate.swift */,
 				7337EFEC1C18196600A2995F /* ViewController.swift */,
 				7337EFEE1C18196600A2995F /* Main.storyboard */,
@@ -62,6 +71,17 @@
 				7337EFF61C18196600A2995F /* Info.plist */,
 			);
 			path = Zombies;
+			sourceTree = "<group>";
+		};
+		7337EFFC1C181E2B00A2995F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7337EFFD1C181E3D00A2995F /* Human.swift */,
+				7337F0011C181EBF00A2995F /* Settings.swift */,
+				7337F0031C1837D800A2995F /* Character.swift */,
+				7337F0051C1837F000A2995F /* Zombie.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7337EFED1C18196600A2995F /* ViewController.swift in Sources */,
+				7337EFFE1C181E3D00A2995F /* Human.swift in Sources */,
+				7337F0041C1837D800A2995F /* Character.swift in Sources */,
+				7337F0061C1837F100A2995F /* Zombie.swift in Sources */,
 				7337EFEB1C18196600A2995F /* AppDelegate.swift in Sources */,
+				7337F0021C181EBF00A2995F /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
